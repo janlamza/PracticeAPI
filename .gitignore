@@ -478,3 +478,5 @@ $RECYCLE.BIN/
 API/appsettings.json
 
 .vscode
+API/practiceapp.db-shm
+API/practiceapp.db-wal
