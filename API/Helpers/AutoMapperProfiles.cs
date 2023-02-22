@@ -14,8 +14,9 @@ namespace API.Helpers
         public AutoMapperProfiles()
         {
             CreateMap<AppUser,MemberDto>()
-                .ForMember(dest => dest.Age, opt => opt.MapFrom(src =>src.DateOfBirth.CalculateAge()));
+                .ForMember(dest => dest.Age, opt => opt.MapFrom(src =>src.DateOfBirth.CalculateAge()));//adding configuration for Age and method
             CreateMap<Photo, PhotoDto>();
+            CreateMap<MemberUpdateDto, AppUser>();
         }
     }
 }
