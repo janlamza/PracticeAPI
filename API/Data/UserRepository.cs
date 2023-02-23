@@ -3,6 +3,7 @@ using API.Entities;
 using API.Interfaces;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace API.Data
@@ -61,7 +62,6 @@ namespace API.Data
         {
             _context.Entry(user).State = EntityState.Modified;
         }
-
         
     }
 }
