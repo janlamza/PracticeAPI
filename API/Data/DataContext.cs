@@ -32,7 +32,6 @@ namespace API.Data
                 .HasForeignKey( ur => ur.RoleId)
                 .IsRequired();
 
-
             builder.Entity<UserLike>()
             .HasKey(k => new{k.SourceUserId, k.TargetUserId});
 
@@ -47,7 +46,6 @@ namespace API.Data
             .WithMany(l => l.LikedByUsers)
             .HasForeignKey(t => t.TargetUserId)
             .OnDelete(DeleteBehavior.Cascade);
-
 
         }
 
