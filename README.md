@@ -18,7 +18,8 @@ Projekt služi kao vježba za izgradnju jednostavnoga backend-a u .NET-u, naglas
 * Uploadanje fizičke slike na Cloudinary servis, a reference na sliku (Url) u bazu
 * Handlanje Errora
 * Paginaciju (Cursor based) korisnika
-* Automatsko seed-anje korisnika u bazu ako je prazna   
+* Automatsko seed-anje korisnika u bazu ako je prazna
+* SignalR pracenje trenutno aktivnih korisnika   
  
  ### Korištene tehnologije :
  * .NET (7.0.102 SDK)
